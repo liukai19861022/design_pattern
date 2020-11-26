@@ -41,5 +41,16 @@ public class Main {
         dogSortComparator.sort(dogs3, new DogWeightComparator());
         System.out.println("DogWeightComparator : "+ Arrays.toString(dogs3));
 
+        System.out.println("----------------------------------------------------------------------------");
+        Cat[] cats1 = {new Cat(10, 2), new Cat(12, 5), new Cat(6, 1)};
+        SortComparator<Cat> catSortComparator = new SortComparator<>();
+        catSortComparator.sort(cats1, ((o1, o2) -> {
+            if (o1.height > o2.height) return -1;
+            else if (o1.height < o2.height) return 1;
+            else return 0;
+        }));
+        System.out.println("CatMaxWeightComparator : "+ Arrays.toString(cats1));
+
+
     }
 }
