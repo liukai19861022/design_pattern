@@ -1,7 +1,7 @@
 package singleton;
 
 /**
- * 不仅可以解决线程安全同步，还可以防止反序列化
+ * 不仅可以解决线  程安全同步，还可以防止反序列化
  * effective java一书中，java创始人之一写到的方法
  */
 public enum Mgr08 {
