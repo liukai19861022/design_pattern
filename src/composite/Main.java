@@ -3,6 +3,10 @@ package composite;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 组合模式
+ * composite
+ */
 abstract class Node {
     abstract public void p();
 }
