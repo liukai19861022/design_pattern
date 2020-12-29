@@ -1,4 +1,4 @@
-package cor.servlet;
+package cor.servlet.v1;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -17,7 +17,7 @@ public class ServletMain {
         FilterChain fc2 = FilterChain.getInstance();
 
         fc.add(new HTMLFilter());
-        fc.add(new SensitiveFilter());
+        fc2.add(new SensitiveFilter());
         fc.add(fc2);
         fc.doFilter(request, response, fc);
 
